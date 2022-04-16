@@ -109,6 +109,7 @@ toggleMode.addEventListener("click", () => {
 
 //Contact Form
 function validate() {
+  const form = document.forms["contact-form"];
   let name = document.querySelector("#name");
   let email = document.querySelector("#email");
   let subjectInput = document.querySelector("#subject");
