@@ -4,6 +4,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -211,14 +212,6 @@ form.disable-form {
 
 .scrollActive {
   @apply scale-100;
-}
-
-.tiltBox,
-.tiltHero {
-  transform-style: preserve-3d;
-}
-.tiltImg {
-  transform: translate3d(0, 0, 100px);
 }
 
 .alert-open {

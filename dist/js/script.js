@@ -131,6 +131,7 @@ function validate() {
       sendmail(name.value, email.value, subjectInput.value, messageInput.value);
       alertSuccess.classList.toggle("alert-open");
       alertSuccess.classList.toggle("alert-close");
+      form.reset();
     }
   });
 }
@@ -143,6 +144,7 @@ function sendmail(name, email, subjectInput, messageInput) {
     to_name: "Joppan Aditya",
     from_name: name,
     message: messageInput,
+    reply_to: email,
   });
 }
 
@@ -198,15 +200,6 @@ alertBtn.addEventListener("click", function () {
 alertBtnError.addEventListener("click", function () {
   alertError.classList.toggle("alert-open");
   alertError.classList.toggle("alert-close");
-});
-
-// Tilt js
-VanillaTilt.init(document.querySelectorAll(".tiltBox"), {
-  max: 25,
-  speed: 1000,
-  scale: 1.1,
-  glare: true,
-  "max-glare": 0.5,
 });
 
 // GSAP
