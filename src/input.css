@@ -4,7 +4,6 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow: hidden;
 }
 
 ::selection {
@@ -48,6 +47,7 @@ body {
   align-items: center;
   justify-content: center;
   transition: opacity 0.6s ease;
+  overflow: hidden;
 }
 .page-loader.fade-out {
   opacity: 0;
@@ -147,15 +147,12 @@ body {
 .navbar-fixed {
   @apply fixed z-[50] bg-base-100 bg-opacity-80 backdrop-blur shadow-bottom;
 }
-.dark .navbar-fixed {
-  @apply fixed z-[50] bg-base-100 bg-opacity-80 backdrop-blur shadow-bottom;
-}
 .MobileNav-blur,
 .dark .MobileNav-blur {
-  @apply z-[50] shadow-md;
+  @apply -z-10 shadow-md;
 }
 .navActive {
-  @apply translate-x-0;
+  @apply -translate-y-0 opacity-100;
 }
 
 .hamburger-active > span:nth-child(2) {
@@ -255,7 +252,7 @@ form.disable-form {
   @apply font-semibold text-sm text-base-content color-easing flex group-hover:text-primary active:text-primary;
 }
 .navbar-mobile {
-  @apply flex font-semibold text-xl md:text-2xl text-base-content color-easing group-hover:text-primary;
+  @apply flex font-semibold text-base text-base-content color-easing group-hover:text-primary;
 }
 .hamburger-line {
   @apply h-[2px] my-1 block bg-base-content group-hover:bg-primary ease-default;
@@ -276,5 +273,5 @@ form.disable-form {
   @apply font-bold text-lg text-base-content justify-center mt-3 color-easing;
 }
 .btnCustom {
-  @apply btn text-base-100 font-semibold bg-primary hover:bg-primary-focus border-none py-3 px-5 rounded-md ease-default;
+  @apply btn text-base-100 font-semibold bg-primary hover:bg-primary-focus border-none py-3 px-5 rounded-md;
 }
