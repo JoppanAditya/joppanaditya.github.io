@@ -9,15 +9,15 @@ body {
 
 ::selection {
   color: #f3f9ff;
-  background-color: #d8a31a;
+  background-color: #c149ad;
 }
 
 ::-webkit-scrollbar {
-  width: 0.7rem;
-  height: 0.7rem;
+  width: 0.5rem;
+  height: 0.5rem;
 }
 ::-webkit-scrollbar-track {
-  background: hsl(266, 6%, 79% / 0.5);
+  background: transparent;
   border-radius: 100vw;
   margin-block: 0.3rem;
   box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.3);
@@ -31,7 +31,7 @@ body {
 }
 @supports (scrollbar-color: red blue) {
   * {
-    scrollbar-color: hsl(210 98% 63%) hsl(266 6% 79% / 0.3);
+    scrollbar-color: hsl(210 98% 63%) transparent;
     scrollbar-width: auto;
   }
 }
@@ -145,10 +145,10 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[50] bg-light bg-opacity-80 backdrop-blur shadow-bottom;
+  @apply fixed z-[50] bg-base-100 bg-opacity-80 backdrop-blur shadow-bottom;
 }
 .dark .navbar-fixed {
-  @apply fixed z-[50] bg-dark bg-opacity-80 backdrop-blur shadow-bottom;
+  @apply fixed z-[50] bg-base-100 bg-opacity-80 backdrop-blur shadow-bottom;
 }
 .MobileNav-blur,
 .dark .MobileNav-blur {
@@ -159,7 +159,7 @@ body {
 }
 
 .hamburger-active > span:nth-child(2) {
-  @apply -rotate-45 w-[30px] bg-main;
+  @apply -rotate-45 w-[30px] bg-primary;
 }
 
 .hamburger-active > span:nth-child(3) {
@@ -167,7 +167,7 @@ body {
 }
 
 .hamburger-active > span:nth-child(4) {
-  @apply rotate-45 w-[30px] bg-main;
+  @apply rotate-45 w-[30px] bg-primary;
 }
 
 .activated,
@@ -184,7 +184,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -27%;
+    bottom: -13%;
     width: 0%;
     height: 3px;
     background-color: #429ffd;
@@ -200,7 +200,7 @@ body {
     content: "";
     position: absolute;
     left: 0;
-    bottom: -27%;
+    bottom: -13%;
     width: 100%;
   }
 }
@@ -252,29 +252,29 @@ form.disable-form {
 }
 
 .navbar-desktop {
-  @apply font-semibold text-sm text-dark dark:text-light color-easing flex group-hover:text-main active:text-main;
+  @apply font-semibold text-sm text-base-content color-easing flex group-hover:text-primary active:text-primary;
 }
 .navbar-mobile {
-  @apply flex font-semibold text-xl md:text-2xl text-dark dark:text-light color-easing group-hover:text-main;
+  @apply flex font-semibold text-xl md:text-2xl text-base-content color-easing group-hover:text-primary;
 }
 .hamburger-line {
-  @apply h-[2px] my-1 block bg-dark dark:bg-light group-hover:bg-main ease-500;
+  @apply h-[2px] my-1 block bg-base-content group-hover:bg-primary ease-default;
 }
 .portfolio-img {
   @apply rounded-md shadow-md overflow-hidden;
 }
 .portfolio-projTitle {
-  @apply font-semibold text-xl text-dark dark:text-light mt-5 mb-3 color-easing;
+  @apply font-semibold text-xl text-base-content mt-5 mb-3 color-easing;
 }
 .portfolio-p {
-  @apply font-medium text-base text-dark-accent dark:text-accent color-easing;
+  @apply font-medium text-base text-muted color-easing;
 }
 .contact-card {
-  @apply card w-full lg:w-2/3 text-center p-8 bg-light-2 dark:bg-dark-2 rounded-xl shadow-md color-easing;
+  @apply card w-full lg:w-2/3 text-center bg-base-200 p-8 rounded-xl shadow-md color-easing;
 }
 .card-title {
-  @apply font-bold text-lg text-dark justify-center dark:text-compliment mt-3 color-easing;
+  @apply font-bold text-lg text-base-content justify-center mt-3 color-easing;
 }
 .btnCustom {
-  @apply btn border-main hover:border-btn-hover text-base font-semibold text-light bg-main py-3 px-5 rounded-md hover:bg-btn-hover ease-default;
+  @apply btn text-base-100 font-semibold bg-primary hover:bg-primary-focus border-none py-3 px-5 rounded-md ease-default;
 }

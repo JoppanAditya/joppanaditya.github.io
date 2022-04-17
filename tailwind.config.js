@@ -8,22 +8,9 @@ module.exports = {
     },
     extend: {
       colors: {
-        'dark': 'hsl(211, 97%, 13%)',
-        'dark-2': 'hsl(211, 97%, 15%)',
-        'light': 'hsl(213, 100%, 98%)',
-        'light-2': 'hsl(213, 100%, 96%)',
-        'main': '#429FFD',
-        'btn-hover': '#347eca',
-        'compliment': '#D8A31A',
-        'dark-accent': '#717788',
-        'accent': '#A5ABBD',
-        'yt': '#FF0000',
-        'ig': '#E4405F',
-        'github': '#181717',
-        'dark-green': '#007D55',
-        'green': '#62ECBC',
-        'dark-red': '#75243A',
-        'alert-red': '#ff3972'
+        muted: '#A6ABBD',
+        "white": "#ffffff",
+        "progress-back": "#596076",
       },
       boxShadow: {
         'bottom': 'inset 0 -1px 0 0 rgba(0, 0, 0, .1)',
@@ -38,4 +25,35 @@ module.exports = {
     require("daisyui"),
     require('@tailwindcss/forms'),
   ],
+  daisyui: {
+    themes: [
+      {
+        myLighttheme: {
+          "primary": "#429ffd",
+          "secondary": "#463aa1",
+          "accent": "#c149ad",
+          "neutral": "#021431",
+          "base-100": "#fbfcff",
+          "base-200": "#f0f6ff",
+          "base-content": "#394e6a",
+          "info": "#93e6fb",
+          "success": "#80ced1",
+          "warning": "#efd8bd",
+          "error": "#e58b8b",
+        },
+        myDarktheme: {
+          "primary": "#429ffd",
+          "secondary": "#828df8",
+          "accent": "#f471b5",
+          "neutral": "#1d283a",
+          "base-100": "#0f1729",
+          "info": "#0ca6e9",
+          "success": "#2bd4bd",
+          "warning": "#f4c152",
+          "error": "#fb6f84",
+          "grey": "##727687",
+        },
+      },
+    ],
+  },
 }

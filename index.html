@@ -9,7 +9,7 @@
     <link rel="icon" href="dist/img/favicon.ico" type="image/x-icon" />
     <link href="dist/output.css" rel="stylesheet" />
   </head>
-  <body class="antialiased bg-light dark:bg-dark color-easing">
+  <body class="antialiased bg-base-100 color-easing">
     <!-- Page Loader Start -->
     <div class="page-loader js-page-loader">
       <img src="dist/img/Page Loader.png" alt="page-loader" />
@@ -22,7 +22,7 @@
         <div class="flex flex-row items-center justify-between relative">
           <!-- Brand -->
           <div class="navBrand px-4">
-            <a href="#home" class="font-bold text-xl py-6 text-main block">Joppan <span class="text-dark dark:text-light color-easing">Aditya</span></a>
+            <a href="#home" class="font-bold text-xl py-6 text-primary block">Joppan <span class="text-base-content color-easing">Aditya</span></a>
           </div>
 
           <div class="flex items-center">
@@ -42,12 +42,12 @@
                   <a href="#portfolio" class="links navbar-desktop py-5 md:mx-4 lg:mx-7">Portfolio</a>
                 </li>
                 <li class="group">
-                  <a href="#contact" class="links navbar-desktop py-5 md:m-4 lg:mx-7">Contact</a>
+                  <a href="#contact" class="links navbar-desktop py-5 md:ml-4 lg:mx-7">Contact</a>
                 </li>
               </ul>
 
               <!-- Mobile Navbar -->
-              <div id="mobileNav" class="lg:hidden absolute py-[15%] md:pt-[10%] bg-light dark:bg-dark bg-opacity-80 dark:bg-opacity-80 js-toggle -right-5 md:-right-20 w-[60%] md:w-[50%] h-screen top-full translate-x-full ease-500">
+              <div id="mobileNav" class="lg:hidden absolute py-[15%] md:pt-[10%] bg-base-100 bg-opacity-80 js-toggle -right-5 md:-right-20 w-[60%] md:w-[50%] h-screen top-full translate-x-full ease-500">
                 <ul class="flex flex-col items-center">
                   <li class="group">
                     <a href="#home" class="navbar-mobile links-mobile pb-5 md:pb-7">Home</a>
@@ -69,7 +69,7 @@
             </nav>
             <!-- Dark Mode & Menu Button -->
             <div class="flex px-4 items-center text-center py-5">
-              <button id="toggleMode" name="toggleMode" type="button" class="text-dark dark:text-main color-easing hover:text-main dark:hover:opacity-80 mx-4 lg:ml-4 flex">
+              <button id="toggleMode" name="toggleMode" type="button" class="text-dark dark:text-primary color-easing hover:text-primary dark:hover:opacity-80 mx-4 lg:ml-4 flex">
                 <span class="sr-only">Dark Mode Toggle</span>
                 <svg xmlns="http://www.w3.org/2000/svg" id="btnToggle" class="h-6 w-6 scale-[1.3] lg:scale-100" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
@@ -93,9 +93,9 @@
     <section id="home" class="min-h-screen pb-16 color-easing">
       <div class="container m-auto px-4">
         <div class="flex flex-wrap h-full pt-24 md:pt-36 lg:pt-[7%] self-center">
-          <div class="flex flex-col w-1/12 text-main items-center justify-center z-10">
+          <div class="flex flex-col w-1/12 text-primary items-center justify-center z-10">
             <!-- Instagram -->
-            <a href="https://www.instagram.com/jodesignn_/" target="_blank" class="mb-14 md:mb-16 hover:text-ig dark:hover:text-compliment ease-default md:scale-110 lg:scale-100">
+            <a href="https://www.instagram.com/jodesignn_/" target="_blank" class="mb-14 md:mb-16 hover:text-base-content dark:hover:text-compliment ease-default md:scale-110 lg:scale-100">
               <svg role="img" width="20" class="fill-current heroSocial" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>Instagram</title>
                 <path
@@ -104,7 +104,7 @@
               </svg>
             </a>
             <!-- Github -->
-            <a href="https://github.com/JoppanAditya" target="_blank" class="mb-14 md:mb-16 hover:text-github dark:hover:text-compliment duration-300 ease-in-out md:scale-110 lg:scale-100">
+            <a href="https://github.com/JoppanAditya" target="_blank" class="mb-14 md:mb-16 hover:text-base-content dark:hover:text-compliment duration-300 ease-in-out md:scale-110 lg:scale-100">
               <svg role="img" width="20" class="fill-current heroSocial" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>GitHub</title>
                 <path
@@ -113,7 +113,7 @@
               </svg>
             </a>
             <!-- Youtube -->
-            <a href="https://www.youtube.com/channel/UCkjKAXB_jHF4cGEulmul7XQ" target="_blank" class="hover:text-yt dark:hover:text-compliment ease-default md:scale-110 lg:scale-100">
+            <a href="https://www.youtube.com/channel/UCkjKAXB_jHF4cGEulmul7XQ" target="_blank" class="hover:text-base-content dark:hover:text-compliment ease-default md:scale-110 lg:scale-100">
               <svg role="img" width="20" class="fill-current heroSocial" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 <title>YouTube</title>
                 <path
@@ -125,28 +125,17 @@
 
           <!-- Desktop -->
           <div class="hidden lg:block w-1/2 self-center px-0 lg:px-6">
-            <h1 class="font-bold text-dark dark:text-light text-5xl color-easing heroTitle">Hi, I'M <span class="font-bold text-main">Joppan</span></h1>
-            <h2 class="font-medium text-compliment text-xl mt-2 mb-5 lg:text-2xl heroAnim">I'm a Student</h2>
-            <p class="italic font-medium text-base text-dark-accent dark:text-accent color-easing mb-1 leading-relaxed heroAnim">
+            <h1 class="font-bold text-base-content text-5xl color-easing">Hi, I'M <span class="font-bold text-primary">Joppan</span></h1>
+            <h2 class="font-medium text-accent text-xl mt-2 mb-5 lg:text-2xl">I'm a Student</h2>
+            <p class="italic font-medium text-base text-base-content color-easing mb-1 leading-relaxed">
               Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”
             </p>
-            <p class="italic text-base text-main mb-10 heroAnim">- Linus Torvalds</p>
+            <p class="italic text-base text-primary mb-10">- Linus Torvalds</p>
 
             <div class="heroBtn">
               <a href="#contact" class="btnCustom">Contact Me</a>
             </div>
           </div>
-
-          <!-- <div class="w-11/12 px-4 lg:w-5/12 self-center">
-            <div class="relative my-5">
-              <img src="dist/img/bai-img.png" alt="Joppan Aditya" class="max-w-full mx-auto" />
-              <span class="absolute -bottom-10 -z-10 left-1/2 -translate-x-1/2 md:scale-[1.65] md:bottom-12 text-main">
-                <svg width="350" height="350" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                  <path fill="currentcolor" d="M48.7,-56.5C56.9,-40.6,52.9,-20.3,53.9,1C54.9,22.3,60.8,44.5,52.7,58.2C44.5,71.8,22.3,76.8,4.2,72.6C-13.9,68.5,-27.7,55,-40.8,41.4C-53.9,27.7,-66.1,13.9,-66.9,-0.8C-67.8,-15.6,-57.2,-31.1,-44.2,-47C-31.1,-62.9,-15.6,-79,2.4,-81.4C20.3,-83.8,40.6,-72.3,48.7,-56.5Z" transform="translate(100 100)" />
-                </svg>
-              </span>
-            </div>
-          </div> -->
 
           <div class="w-11/12 px-4 lg:w-5/12 self-center">
             <div class="relative my-5">
@@ -156,12 +145,10 @@
 
           <!-- Mobile -->
           <div class="w-full px-4 lg:hidden">
-            <h1 class="text-lg font-semibold text-dark dark:text-light color-easing md:text-4xl md:flex heroTitle">Hi, I'M <span class="block md:flex font-bold text-main text-4xl md:text-4xl md:px-2">Joppan</span></h1>
-            <h2 class="font-medium text-compliment text-lg mt-1 mb-2 lg:text-2xl heroAnim">I'm a Student</h2>
-            <p class="italic font-medium text-dark-accent dark:text-accent color-easing mb-1 heroAnim">
-              Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”
-            </p>
-            <p class="italic text-base text-main mb-10 heroAnim">- Linus Torvalds</p>
+            <h1 class="text-lg font-semibold text-base-content color-easing md:text-4xl md:flex">Hi, I'M <span class="block md:flex font-bold text-primary text-4xl md:text-4xl md:px-2">Joppan</span></h1>
+            <h2 class="font-medium text-accent text-lg mt-1 mb-2 lg:text-2xl">I'm a Student</h2>
+            <p class="italic font-medium text-base-content color-easing mb-1">Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”</p>
+            <p class="italic text-base text-primary mb-10">- Linus Torvalds</p>
             <div class="heroBtn">
               <a href="#contact" class="btnCustom">Contact Me</a>
             </div>
@@ -182,21 +169,22 @@
     <!--Hero Section End  -->
 
     <!-- About Section Start -->
-    <section id="about" class="py-32 bg-light-2 dark:bg-dark-2 color-easing">
+    <section id="about" class="py-32 bg-base-200 color-easing">
       <div class="container mx-auto">
         <div class="flex flex-wrap items-center">
           <div class="w-full px-4 md:w-1/2 mb-8">
             <div class="flex flex-wrap xl:justify-center p-4">
-              <div class="rounded-md shadow-md overflow-hidden tiltBox">
+              <div class="rounded-md shadow-md overflow-hidden">
                 <img src="dist/img/about.jpg" alt="Joppan Aditya" class="max-w-full mx-auto lg:max-w-sm" />
               </div>
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2">
-            <h2 class="font-bold text-main text-4xl lg:text-5xl md:mb-1">About <span class="text-dark dark:text-light color-easing">Me</span></h2>
-            <h4 class="font-medium text-compliment text-md mb-5">Find More About Me</h4>
-            <p class="font-medium text-base lg:text-lg text-justify text-dark-accent dark:text-light color-easing max-w-xl mb-9">
-              Hello, my name is Gede Jovan Tiyo Aditya. I am 18 years old. I am a 12th grade student  majoring in Multimedia at one of the State Vocational Schools in Jakarta. I became interested in web developers when I was an internship at an automotive company in Indonesia when I was in 11th grade. From then, I start learning web programming until now.
+            <h2 class="font-bold text-primary text-4xl lg:text-5xl md:mb-1">About <span class="text-base-content color-easing">Me</span></h2>
+            <h4 class="font-medium text-accent text-md mb-5">Find More About Me</h4>
+            <p class="font-medium text-base lg:text-lg text-justify text-base-content color-easing max-w-xl mb-9">
+              Hello, my name is Gede Jovan Tiyo Aditya. I am 18 years old. I am a 12th grade student majoring in Multimedia at one of the State Vocational Schools in Jakarta. I became interested in web developers when I was an internship at
+              an automotive company in Indonesia when I was in 11th grade. From then, I start learning web programming until now.
             </p>
             <a href="#" class="btnCustom">Get Resume</a>
           </div>
@@ -206,12 +194,12 @@
     <!-- About Section End -->
 
     <!-- Skills Section Start -->
-    <section id="skills" class="bg-dark dark:bg-main pt-32 pb-16 color-easing">
+    <section id="skills" class="bg-neutral pt-32 pb-16 color-easing">
       <div class="container mx-auto">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
-            <h2 class="font-bold text-main dark:text-dark text-4xl lg:text-5xl md:mb-2 color-easing">Skills</h2>
-            <h4 class="font-medium text-compliment dark:text-white text-md mb-5 color-easing">Professional Skills</h4>
+            <h2 class="font-bold text-primary text-4xl lg:text-5xl md:mb-2 color-easing">Skills</h2>
+            <h4 class="font-medium text-accent text-md mb-5 color-easing">Professional Skills</h4>
           </div>
         </div>
         <div class="flex flex-wrap">
@@ -224,92 +212,92 @@
 
           <div class="w-full px-4 md:w-1/2">
             <!-- Design -->
-            <div tabindex="0" class="collapse collapse-open skillsAnim">
-              <div class="collapse-title text-xl font-medium text-light dark:text-dark color-easing">Design</div>
+            <div tabindex="0" class="collapse collapse-open">
+              <div class="collapse-title text-xl font-medium text-white color-easing">Design</div>
               <div class="collapse-content">
                 <!-- Photoshop -->
                 <div class="pb-2">
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>Adobe Photoshop</span>
                     <span>90%</span>
                   </div>
-                  <progress class="progress progress-warning dark:bg-light-2 bg-dark-accent w-full color-easing" value="90" max="100"></progress>
+                  <progress class="progress progress-accent bg-progress-back w-full color-easing" value="90" max="100"></progress>
                 </div>
                 <!-- Illustrator -->
                 <div class="pb-2">
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>Adobe Illustrator</span>
                     <span>70%</span>
                   </div>
-                  <progress class="progress progress-warning dark:bg-light-2 bg-dark-accent w-full color-easing" value="70" max="100"></progress>
+                  <progress class="progress progress-accent bg-progress-back w-full color-easing" value="70" max="100"></progress>
                 </div>
                 <!-- CorelDraw -->
                 <div class="pb-2">
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>CorelDRAW</span>
                     <span>90%</span>
                   </div>
-                  <progress class="progress progress-warning dark:bg-light-2 bg-dark-accent w-full color-easing" value="90" max="100"></progress>
+                  <progress class="progress progress-accent bg-progress-back w-full color-easing" value="90" max="100"></progress>
                 </div>
                 <!-- XD -->
                 <div class="pb-2">
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>Adobe XD</span>
                     <span>75%</span>
                   </div>
-                  <progress class="progress progress-warning dark:bg-light-2 bg-dark-accent w-full color-easing" value="75" max="100"></progress>
+                  <progress class="progress progress-accent bg-progress-back w-full color-easing" value="75" max="100"></progress>
                 </div>
                 <!-- Figma -->
                 <div>
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>Figma</span>
                     <span>85%</span>
                   </div>
-                  <progress class="progress progress-warning dark:bg-light-2 bg-dark-accent w-full color-easing" value="85" max="100"></progress>
+                  <progress class="progress progress-accent bg-progress-back w-full color-easing" value="85" max="100"></progress>
                 </div>
               </div>
             </div>
           </div>
           <div class="w-full px-4 md:w-1/2">
             <!-- Ms. office -->
-            <div tabindex="0" class="collapse collapse-open skillsAnim">
-              <div class="collapse-title text-xl font-medium text-light dark:text-dark color-easing">Microsoft Office</div>
+            <div tabindex="0" class="collapse collapse-open">
+              <div class="collapse-title text-xl font-medium text-white color-easing">Microsoft Office</div>
               <div class="collapse-content">
                 <!-- Word -->
                 <div class="pb-2">
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>Microsoft Word</span>
                     <span>95%</span>
                   </div>
-                  <progress class="progress progress-secondary dark:bg-light-2 bg-dark-accent w-full color-easing" value="95" max="100"></progress>
+                  <progress class="progress progress-secondary bg-progress-back w-full color-easing" value="95" max="100"></progress>
                 </div>
                 <!-- Power Point -->
                 <div class="pb-2">
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>Microsoft Power Point</span>
                     <span>90%</span>
                   </div>
-                  <progress class="progress progress-secondary dark:bg-light-2 bg-dark-accent w-full color-easing" value="90" max="100"></progress>
+                  <progress class="progress progress-secondary bg-progress-back w-full color-easing" value="90" max="100"></progress>
                 </div>
                 <!-- Excel -->
                 <div class="pb-2">
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>Microsoft Excel</span>
                     <span>85%</span>
                   </div>
-                  <progress class="progress progress-secondary dark:bg-light-2 bg-dark-accent w-full color-easing" value="85" max="100"></progress>
+                  <progress class="progress progress-secondary bg-progress-back w-full color-easing" value="85" max="100"></progress>
                 </div>
               </div>
             </div>
           </div>
             <!-- Front-end -->
-            <!-- <div tabindex="0" class="collapse collapse-arrow skillsAnim ease-default">
+            <!-- <div tabindex="0" class="collapse collapse-arrow ease-default">
               <input type="checkbox" />
-              <div class="collapse-title text-xl font-medium text-light dark:text-dark color-easing">Front-end Developer</div>
+              <div class="collapse-title text-xl font-medium text-base-100 color-easing">Front-end Developer</div>
               <div class="collapse-content">
                  Html 
                 <div class="pb-2">
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>HTML</span>
                     <span>90%</span>
                   </div>
@@ -317,7 +305,7 @@
                 </div>
                  Css 
                 <div class="pb-2">
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>CSS</span>
                     <span>85%</span>
                   </div>
@@ -325,7 +313,7 @@
                 </div>
                  Javascript 
                 <div class="pb-2">
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>Javascript</span>
                     <span>60%</span>
                   </div>
@@ -333,7 +321,7 @@
                 </div>
                  Bootstrap 
                 <div class="pb-2">
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>Bootstrap</span>
                     <span>80%</span>
                   </div>
@@ -341,7 +329,7 @@
                 </div>
                  Tailwind 
                 <div>
-                  <div class="w-full justify-between flex text-accent dark:text-light color-easing">
+                  <div class="w-full justify-between flex text-muted color-easing">
                     <span>Tailwind CSS</span>
                     <span>70%</span>
                   </div>
@@ -356,12 +344,12 @@
     <!-- Skills Section End -->
 
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="bg-light-2 dark:bg-dark-2 pt-32 pb-16 color-easing">
+    <section id="portfolio" class="bg-base-200 pt-32 pb-16 color-easing">
       <div class="container mx-auto">
         <div class="w-full px-4">
           <div class="mx-auto mb-16 text-center">
-            <h2 class="font-bold text-main text-4xl lg:text-5xl md:mb-1">Portfolio</h2>
-            <h4 class="font-medium text-compliment text-md mb-5">My Latest Project</h4>
+            <h2 class="font-bold text-primary text-4xl lg:text-5xl md:mb-1">Portfolio</h2>
+            <h4 class="font-medium text-accent text-md mb-5">My Latest Project</h4>
           </div>
         </div>
 
@@ -373,8 +361,8 @@
             </div>
             <h3 class="portfolio-projTitle">Landing Page Joppan Aditya</h3>
             <p class="portfolio-p">This is my personal landing page project. I created this website to learn Tailwind CSS.</p>
-            <div class="pt-3">
-              <a href="https://github.com/JoppanAditya/portfolio-tailwind" target="_blank" class="mr-4 btn btn-outline border-main hover:border-main text-base font-semibold text-main hover:text-light hover:bg-main py-3 px-5 rounded-md ease-default">Github</a>
+            <div class="pt-3 flex items-center">
+              <a href="https://github.com/JoppanAditya/portfolio-tailwind" target="_blank" class="mr-4 btn btn-outline border-primary hover:border-primary text-base font-semibold text-primary hover:text-light hover:bg-primary py-3 px-5 rounded-md ease-default">Github</a>
               <a href="https://joppanaditya.github.io/portfolio-tailwind/" target="_blank" class="btnCustom">Live Demo</a>
             </div>
           </div>
@@ -385,8 +373,8 @@
             </div>
             <h3 class="portfolio-projTitle">Company Profile</h3>
             <p class="portfolio-p">This project was made for my school assignment, to design a company profile for PT Hage Raya Solution.</p>
-            <div class="pt-3">
-              <a href="https://github.com/JoppanAditya/HageRayaSolution" target="_blank" class="mr-4 btn btn-outline border-main hover:border-main text-base font-semibold text-main hover:text-light hover:bg-main py-3 px-5 rounded-md ease-default">Github</a>
+            <div class="pt-3 flex items-center">
+              <a href="https://github.com/JoppanAditya/HageRayaSolution" target="_blank" class="mr-4 btn btn-outline border-primary hover:border-primary text-base font-semibold text-primary hover:text-light hover:bg-primary py-3 px-5 rounded-md ease-default">Github</a>
               <a href="https://joppanaditya.github.io/HageRayaSolution/" target="_blank" class="btnCustom">Live Demo</a>
             </div>
           </div>
@@ -397,8 +385,8 @@
             </div>
             <h3 class="portfolio-projTitle">Company Landing Page</h3>
             <p class="portfolio-p">This is a landing page for company with simple and elegant design.</p>
-            <div class="pt-3">
-              <a href="https://github.com/JoppanAditya/landing-page" target="_blank" class="mr-4 btn btn-outline border-main hover:border-main text-base font-semibold text-main hover:text-light hover:bg-main py-3 px-5 rounded-md ease-default">Github</a>
+            <div class="pt-3 flex items-center">
+              <a href="https://github.com/JoppanAditya/landing-page" target="_blank" class="mr-4 btn btn-outline border-primary hover:border-primary text-base font-semibold text-primary hover:text-light hover:bg-primary py-3 px-5 rounded-md ease-default">Github</a>
               <a href="https://joppanaditya.github.io/landing-page/" target="_blank" class="btnCustom">Live Demo</a>
             </div>
           </div>
@@ -409,8 +397,8 @@
             </div>
             <h3 class="portfolio-projTitle">Company Profile</h3>
             <p class="portfolio-p">A simple company profile project that I made to learn Materialize CSS.</p>
-            <div class="pt-3">
-              <a href="https://github.com/JoppanAditya/company-profile" target="_blank" class="mr-4 btn btn-outline border-main hover:border-main text-base font-semibold text-main hover:text-light hover:bg-main py-3 px-5 rounded-md ease-default">Github</a>
+            <div class="pt-3 flex items-center">
+              <a href="https://github.com/JoppanAditya/company-profile" target="_blank" class="mr-4 btn btn-outline border-primary hover:border-primary text-base font-semibold text-primary hover:text-light hover:bg-primary py-3 px-5 rounded-md ease-default">Github</a>
               <a href="https://joppanaditya.github.io/company-profile/" target="_blank" class="btnCustom">Live Demo</a>
             </div>
           </div>
@@ -420,7 +408,7 @@
     <!-- Portfolio Section End -->
 
     <!-- Alert Success -->
-    <div class="alert alert-success rounded-lg shadow-lg md:w-[28em] fixed top-24 md:top-28 left-1/2 -translate-x-1/2 z-30 ease-default alert-close">
+    <div class="alert alert-success rounded-lg shadow-lg md:w-[28em] fixed top-20 md:top-28 left-1/2 -translate-x-1/2 z-30 ease-default alert-close">
       <div class="justify-between w-full">
         <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -434,11 +422,9 @@
       </div>
     </div>
     <!-- Alert Error -->
-    <div class="alert alert-error rounded-lg shadow-lg w-full md:w-[28em] fixed top-24 md:top-28 left-1/2 -translate-x-1/2 flex z-30 ease-default alert-close">
+    <div class="alert alert-error rounded-lg shadow-lg w-full md:w-[28em] fixed top-20 md:top-24 left-1/2 -translate-x-1/2 flex z-30 ease-default alert-close">
       <div class="justify-between w-full">
-        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z" />
-        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="stroke-current flex-shrink-0 h-6 w-6" fill="none" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" /></svg>
         <h4><span class="font-bold">Sorry</span>, fields cannot be empty!</h4>
         <button type="button" class="alertBtnError flex text-dark-red justify-end items-center">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3">
@@ -453,8 +439,8 @@
       <div class="container mx-auto">
         <div class="w-full px-4">
           <div class="mx-auto mb-20 text-center">
-            <h2 class="font-bold text-main text-4xl lg:text-5xl md:mb-1">Contact <span class="text-dark dark:text-light color-easing">Me</span></h2>
-            <h4 class="font-medium text-compliment text-md mb-5">Get In Touch</h4>
+            <h2 class="font-bold text-primary text-4xl lg:text-5xl md:mb-1">Contact <span class="text-base-content dark:text-light color-easing">Me</span></h2>
+            <h4 class="font-medium text-accent text-md mb-5">Get In Touch</h4>
           </div>
         </div>
 
@@ -464,19 +450,19 @@
               <!-- Card 1 -->
               <div class="flex mb-8 justify-center">
                 <div class="contact-card contactCard">
-                  <span class="text-main">
+                  <span class="text-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 scale-[1.75] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
                     </svg>
                   </span>
                   <h3 class="card-title">Email</h3>
-                  <span class="text-dark-accent dark:text-accent color-easing">gdjovan12@gmail.com</span>
+                  <span class="text-muted color-easing">gdjovan12@gmail.com</span>
                 </div>
               </div>
               <!-- Card 2 -->
               <div class="flex mb-8 justify-center">
                 <div class="contact-card contactCard">
-                  <span class="text-main">
+                  <span class="text-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 scale-[1.75] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                       <path
                         stroke-linecap="round"
@@ -486,20 +472,20 @@
                     </svg>
                   </span>
                   <h3 class="card-title">Phone</h3>
-                  <span class="text-dark-accent dark:text-accent color-easing">(+62) 881 1879 010</span>
+                  <span class="text-muted color-easing">(+62) 881 1879 010</span>
                 </div>
               </div>
               <!-- Card 3 -->
               <div class="flex mb-8 justify-center">
                 <div class="contact-card contactCard">
-                  <span class="text-main">
+                  <span class="text-primary">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 scale-[1.75] mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                       <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                     </svg>
                   </span>
                   <h3 class="card-title">Address</h3>
-                  <span class="text-dark-accent dark:text-accent color-easing">Jl. Prof. Dr. Latumenten Blok A35, Jakarta, Indonesia</span>
+                  <span class="text-muted color-easing">Jl. Prof. Dr. Latumenten Blok A35, Jakarta, Indonesia</span>
                 </div>
               </div>
             </div>
@@ -507,40 +493,35 @@
           <div class="w-full px-4 lg:w-1/2">
             <form name="contact-form">
               <div class="w-full px-4 mb-8 contactForm">
-                <label for="name" class="text-base font-bold text-main">Name</label>
-                <input type="text" id="name" name="name" class="w-full bg-light-2 dark:bg-dark-2 text-compliment p-3 mt-2 rounded-md border-0 focus:ring-1 focus:ring-main color-easing"/>
+                <label for="name" class="text-base font-bold text-primary">Name</label>
+                <input type="text" id="name" name="name" class="w-full bg-base-200 text-accent p-3 mt-2 rounded-md border-0 focus:ring-1 focus:ring-primary color-easing"/>
               </div>
               <div class="w-full px-4 mb-8 contactForm">
-                <label for="email" class="text-base font-bold text-main">Email</label>
+                <label for="email" class="text-base font-bold text-primary">Email</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
-                  class="w-full bg-light-2 dark:bg-dark-2 border-0 text-compliment p-3 mt-2 rounded-md focus:outline-none placeholder:opacity-40 dark:placeholder:opacity-80 dark:placeholder:text-slate-600 focus:ring-1 focus:ring-main invalid:border-pink-500 invalid:text-pink-600 focus:invalid:border-pink-500 focus:invalid:ring-pink-500 color-easing"
+                  class="w-full bg-base-200 border-0 text-accent p-3 mt-2 rounded-md focus:outline-none placeholder:opacity-50 placeholder:text-muted focus:ring-1 focus:ring-primary invalid:border-error invalid:text-error focus:invalid:border-none focus:invalid:ring-error color-easing"
                   placeholder="name@example.com"
                 />
               </div>
               <div class="w-full px-4 mb-8 contactForm">
-                <label for="subject" class="text-base font-bold text-main">Subject</label>
-                <input type="text" id="subject" name="subject" class="w-full bg-light-2 dark:bg-dark-2 text-compliment p-3 mt-2 rounded-md focus:outline-none border-0 focus:ring-1 focus:ring-main color-easing"/>
+                <label for="subject" class="text-base font-bold text-primary">Subject</label>
+                <input type="text" id="subject" name="subject" class="w-full bg-base-200 text-accent p-3 mt-2 rounded-md focus:outline-none border-0 focus:ring-1 focus:ring-primary color-easing"/>
               </div>
               <div class="w-full px-4 mb-8 contactForm">
-                <label for="message" class="text-base font-bold text-main">Message</label>
+                <label for="message" class="text-base font-bold text-primary">Message</label>
                 <textarea
                   type="text"
                   id="text"
                   name="message"
-                  class="w-full bg-light-2 dark:bg-dark-2 text-compliment p-3 mt-2 rounded-md focus:outline-none border-0 focus:ring-1 focus:ring-main h-32 lg:h-48 color-easing"
+                  class="w-full bg-base-200 text-accent p-3 mt-2 rounded-md focus:outline-none border-0 focus:ring-1 focus:ring-primary h-32 lg:h-48 color-easing"
                 ></textarea>
               </div>
               <!-- Send Button -->
               <div class="btnSend w-full px-4 flex justify-end">
                 <button type="submit" class="btnCustom w-full md:w-2/6">Send Message</button>
-              </div>
-              <div class="btnSending w-full px-4 flex justify-end hidden">
-                <div class="cursor-not-allowed">
-                  <button class="btnCustom loading bg-opacity-75">Processing...</button>
-                </div>
               </div>
             </form>
           </div>
@@ -553,7 +534,7 @@
     <div id="scrollBtn" class="fixed rounded-xl overflow-auto p-8 bottom-2 right-0 md:right-2 scale-0">
       <a href="#home" class="scrollTop">
         <div class="flex justify-end">
-          <div class="animate-bounce text-main bg-light dark:bg-dark p-2 w-10 h-10 md:w-14 md:h-14 lg:w-10 lg:h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center color-easing">
+          <div class="animate-bounce text-primary bg-base-100 p-2 w-10 h-10 md:w-14 md:h-14 lg:w-10 lg:h-10 ring-1 ring-slate-900/5 dark:ring-slate-200/20 shadow-lg rounded-full flex items-center justify-center color-easing">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
               <path fill-rule="evenodd" d="M3.293 9.707a1 1 0 010-1.414l6-6a1 1 0 011.414 0l6 6a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L4.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
             </svg>
@@ -563,28 +544,28 @@
     </div>
 
     <!-- Footer Start -->
-    <footer class="bg-dark dark:bg-main pt-20 pb-10 color-easing">
+    <footer class="bg-neutral pt-20 pb-10 color-easing">
       <div class="container mx-auto">
         <div class="flex flex-wrap justify-center">
           <div class="w-full px-4 mb-1 font-medium text-center">
-            <h2 class="font-bold text-4xl text-light mb-5">Joppan <span class="text-main dark:text-dark color-easing">Aditya</span></h2>
+            <h2 class="font-bold text-4xl text-white mb-5">Joppan <span class="text-primary color-easing">Aditya</span></h2>
           </div>
           <div class="w-full px-4 mb-5">
-            <ul class="text-light text-center block md:flex justify-center">
+            <ul class="text-white text-center block md:flex justify-center">
               <li>
-                <a href="#home" class="inline-block text-base hover:text-main dark:hover:text-dark py-2 mx-5 md:flex">Home</a>
+                <a href="#home" class="inline-block text-base hover:text-primary py-2 mx-5 md:flex">Home</a>
               </li>
               <li>
-                <a href="#about" class="inline-block text-base hover:text-main dark:hover:text-dark py-2 mx-5 md:flex">About</a>
+                <a href="#about" class="inline-block text-base hover:text-primary py-2 mx-5 md:flex">About</a>
               </li>
               <li>
-                <a href="#skills" class="inline-block text-base hover:text-main dark:hover:text-dark py-2 mx-5 md:flex">Skills</a>
+                <a href="#skills" class="inline-block text-base hover:text-primary py-2 mx-5 md:flex">Skills</a>
               </li>
               <li>
-                <a href="#portfolio" class="inline-block text-base hover:text-main dark:hover:text-dark py-2 mx-5 md:flex">Portfolio</a>
+                <a href="#portfolio" class="inline-block text-base hover:text-primary py-2 mx-5 md:flex">Portfolio</a>
               </li>
               <li>
-                <a href="#contact" class="inline-block text-base hover:text-main dark:hover:text-dark py-2 mx-5 md:flex">Contact</a>
+                <a href="#contact" class="inline-block text-base hover:text-primary py-2 mx-5 md:flex">Contact</a>
               </li>
             </ul>
           </div>
@@ -596,7 +577,7 @@
               <a
                 href="https://www.youtube.com/channel/UCkjKAXB_jHF4cGEulmul7XQ"
                 target="_blank"
-                class="w-11 h-11 rounded-full flex justify-center items-center ring-1 ring-slate-200/20 dark:ring-slate-900/5 mr-6 text-light hover:ring-yt hover:bg-yt ease-default lg:mr-9"
+                class="w-11 h-11 rounded-full flex justify-center items-center ring-1 ring-slate-200/20 dark:ring-slate-900/5 mr-6 text-white hover:ring-primary hover:bg-primary ease-default lg:mr-9"
               >
                 <svg role="img" width="20" class="fill-current lg:scale-110" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>YouTube</title>
@@ -609,7 +590,7 @@
               <a
                 href="https://www.instagram.com/jodesignn_/"
                 target="_blank"
-                class="w-11 h-11 rounded-full flex justify-center items-center ring-1 ring-slate-200/20 dark:ring-slate-900/5 mr-6 text-light hover:ring-ig hover:bg-ig ease-default lg:mr-9"
+                class="w-11 h-11 rounded-full flex justify-center items-center ring-1 ring-slate-200/20 dark:ring-slate-900/5 mr-6 text-white hover:ring-primary hover:bg-primary ease-default lg:mr-9"
               >
                 <svg role="img" width="20" class="fill-current lg:scale-110" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>Instagram</title>
@@ -619,7 +600,7 @@
                 </svg>
               </a>
               <!-- Github -->
-              <a href="https://github.com/JoppanAditya" target="_blank" class="w-11 h-11 rounded-full flex justify-center items-center ring-1 ring-slate-200/20 dark:ring-slate-900/5 text-light hover:ring-github hover:bg-github ease-default">
+              <a href="https://github.com/JoppanAditya" target="_blank" class="w-11 h-11 rounded-full flex justify-center items-center ring-1 ring-slate-200/20 dark:ring-slate-900/5 text-white hover:ring-primary hover:bg-primary ease-default">
                 <svg role="img" width="20" class="fill-current lg:scale-110" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                   <title>GitHub</title>
                   <path
@@ -628,8 +609,8 @@
                 </svg>
               </a>
             </div>
-            <p class="font-medium text-xs text-light text-center md:text-sm">
-              © <a href="https://www.instagram.com/jodesignn_/" target="_blank" class="font-bold text-light hover:text-main dark:hover:text-dark">Joppan Aditya</a>. All rights reserved.
+            <p class="font-medium text-xs text-white text-center md:text-sm">
+              © <a href="https://www.instagram.com/jodesignn_/" target="_blank" class="font-bold text-white hover:text-primary color-easing">Joppan Aditya</a>. All rights reserved.
             </p>
           </div>
         </div>
@@ -637,13 +618,15 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- Theme Change -->
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
     <!-- Email js -->
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
-      (function(){
-         emailjs.init("mJ_egTS5OQghRcw5_");
+      (function () {
+        emailjs.init("mJ_egTS5OQghRcw5_");
       })();
-   </script>
+    </script>
     <!-- Custom Javascript -->
     <script src="dist/js/script.js"></script>
   </body>

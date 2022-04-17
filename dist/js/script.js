@@ -1,4 +1,4 @@
-// Page Loader
+//===== Page Loader =====//
 window.addEventListener("load", () => {
   document.querySelector(".js-page-loader").classList.add(".fade-out");
   setTimeout(() => {
@@ -6,7 +6,7 @@ window.addEventListener("load", () => {
   }, 500);
 });
 
-// Navbar Fixed
+//===== Navbar Fixed =====//
 window.onscroll = function () {
   const header = document.querySelector("header");
   const mobileNav = document.getElementById("mobileNav");
@@ -21,7 +21,7 @@ window.onscroll = function () {
   }
 };
 
-// Active Navbar on Scroll
+//===== Active Navbar on Scroll =====//
 const links = document.querySelectorAll(".links");
 const MobileLinks = document.querySelectorAll(".links-mobile");
 const section = document.querySelectorAll("section");
@@ -37,7 +37,7 @@ function activeMenu() {
 activeMenu();
 window.addEventListener("scroll", activeMenu);
 
-// Hamburger
+//===== Hamburger =====//
 document.addEventListener("DOMContentLoaded", function () {
   const navToggle = document.getElementsByClassName("js-toggle");
   const hamburger = document.getElementById("hamburger");
@@ -79,23 +79,26 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-// Dark Mode Toggle
+//===== Dark Mode Toggle =====//
 let darkMode = localStorage.getItem("dark");
 const toggleMode = document.querySelector("#toggleMode");
+const collapseTitle = document.querySelectorAll(".collapse-title");
 
 const enableDark = () => {
-  document.documentElement.classList.add("dark");
+  document.documentElement.setAttribute("data-theme", "myDarktheme");
   localStorage.setItem("dark", "enabled");
   document.getElementById("btnToggle").setAttribute("fill", "currentColor");
 };
 const disableDark = () => {
-  document.documentElement.classList.remove("dark");
+  document.documentElement.setAttribute("data-theme", "myLighttheme");
   localStorage.setItem("dark", null);
   document.getElementById("btnToggle").setAttribute("fill", "none");
 };
 
 if (darkMode === "enabled") {
   enableDark();
+} else {
+  disableDark();
 }
 
 toggleMode.addEventListener("click", () => {
@@ -107,7 +110,7 @@ toggleMode.addEventListener("click", () => {
   }
 });
 
-//Contact Form
+//===== Contact Form =====//
 function validate() {
   const form = document.forms["contact-form"];
   let name = document.querySelector("#name");
@@ -115,20 +118,13 @@ function validate() {
   let subjectInput = document.querySelector("#subject");
   let messageInput = document.querySelector("#text");
   const btnSend = document.querySelector(".btnSend");
-  const btnLoading = document.querySelector(".btnSending");
 
   btnSend.addEventListener("click", (e) => {
     e.preventDefault();
-    btnSend.classList.toggle("hidden");
-    btnLoading.classList.toggle("hidden");
     if (name.value == "" || email.value == "" || subjectInput.value == "" || messageInput.value == "") {
-      btnSend.classList.toggle("hidden");
-      btnLoading.classList.toggle("hidden");
       alertError.classList.toggle("alert-open");
       alertError.classList.toggle("alert-close");
     } else {
-      btnSend.classList.toggle("hidden");
-      btnLoading.classList.toggle("hidden");
       sendmail(name.value, email.value, subjectInput.value, messageInput.value);
       alertSuccess.classList.toggle("alert-open");
       alertSuccess.classList.toggle("alert-close");
@@ -178,7 +174,7 @@ function sendmail(name, email, subjectInput, messageInput) {
 //   });
 // }
 
-// Scroll to Top
+//===== Scroll to Top =====//
 var scrollTop = document.getElementById("scrollBtn");
 window.addEventListener("scroll", function () {
   if (window.pageYOffset > 800) {
@@ -188,7 +184,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-// Alerts
+//===== Alerts =====//
 const alertBtn = document.querySelector(".alertBtn");
 const alertBtnError = document.querySelector(".alertBtnError");
 const alertSuccess = document.querySelector(".alert-success");
