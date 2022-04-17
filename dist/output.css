@@ -1913,16 +1913,12 @@ body[dir="rtl"] .checkbox:checked,
   top: 100%;
 }
 
-.top-24 {
-  top: 6rem;
+.top-20 {
+  top: 5rem;
 }
 
 .left-1\/2 {
   left: 50%;
-}
-
-.top-20 {
-  top: 5rem;
 }
 
 .bottom-2 {
@@ -2537,7 +2533,7 @@ body[dir="rtl"] .checkbox:checked,
 
 body {
   font-family: "Poppins", sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 ::-moz-selection {
