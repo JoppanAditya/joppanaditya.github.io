@@ -148,10 +148,10 @@ body {
   @apply fixed z-[50] bg-base-100 bg-opacity-80 shadow-bottom backdrop-blur;
 }
 .MobileNav-blur {
-  @apply -z-10 shadow-md;
+  @apply z-[50] shadow-md;
 }
 .navActive {
-  @apply -translate-y-0 opacity-100;
+  @apply translate-x-0 opacity-100;
 }
 @keyframes slide-down {
   0% {
@@ -256,7 +256,7 @@ body {
   @apply color-easing flex text-sm font-semibold text-base-content active:text-primary group-hover:text-primary;
 }
 .navbar-mobile {
-  @apply color-easing flex text-base font-semibold text-base-content group-hover:text-primary;
+  @apply color-easing flex text-xl font-semibold text-base-content group-hover:text-primary;
 }
 .hamburger-line {
   @apply ease-default my-1 block h-[2px] bg-base-content group-hover:bg-primary;
