@@ -145,18 +145,31 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[50] bg-base-100 bg-opacity-80 backdrop-blur shadow-bottom;
+  @apply fixed z-[50] bg-base-100 bg-opacity-80 shadow-bottom backdrop-blur;
 }
-.MobileNav-blur,
-.dark .MobileNav-blur {
+.MobileNav-blur {
   @apply -z-10 shadow-md;
 }
 .navActive {
   @apply -translate-y-0 opacity-100;
 }
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+  75% {
+    opacity: 50;
+    transform: translateY(-25%);
+  }
+  100% {
+    opacity: 100;
+    transform: translateY(-0px);
+  }
+}
 
 .hamburger-active > span:nth-child(2) {
-  @apply -rotate-45 w-[30px] bg-primary;
+  @apply w-[30px] -rotate-45 bg-primary;
 }
 
 .hamburger-active > span:nth-child(3) {
@@ -164,7 +177,7 @@ body {
 }
 
 .hamburger-active > span:nth-child(4) {
-  @apply rotate-45 w-[30px] bg-primary;
+  @apply w-[30px] rotate-45 bg-primary;
 }
 
 .activated,
@@ -172,12 +185,10 @@ body {
   color: #429ffd !important;
 }
 @media (min-width: 1024px) {
-  .deskNav ul a,
-  .dark .deskNav ul a {
+  .deskNav ul a {
     position: relative;
   }
-  .deskNav ul a::before,
-  a.dark .deskNav ul a::before {
+  .deskNav ul a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -188,23 +199,16 @@ body {
     transform-origin: center;
     transition: all 0.3s ease;
   }
-  .deskNav ul a:hover::before,
-  .dark .deskNav ul a:hover::before {
+  .deskNav ul a:hover::before {
     width: 100%;
   }
-  .deskNav ul a.activated::before,
-  a.dark .deskNav ul a.activated::before {
+  .deskNav ul a.activated::before {
     content: "";
     position: absolute;
     left: 0;
     bottom: -13%;
     width: 100%;
   }
-}
-
-form.disable-form {
-  pointer-events: none;
-  opacity: 0.7;
 }
 
 .scrollActive {
@@ -215,7 +219,7 @@ form.disable-form {
   animation: pop-up 0.5s ease;
 }
 .alert-close {
-  @apply opacity-0 scale-0;
+  @apply scale-0 opacity-0;
 }
 @keyframes pop-up {
   0% {
@@ -249,29 +253,29 @@ form.disable-form {
 }
 
 .navbar-desktop {
-  @apply font-semibold text-sm text-base-content color-easing flex group-hover:text-primary active:text-primary;
+  @apply color-easing flex text-sm font-semibold text-base-content active:text-primary group-hover:text-primary;
 }
 .navbar-mobile {
-  @apply flex font-semibold text-base text-base-content color-easing group-hover:text-primary;
+  @apply color-easing flex text-base font-semibold text-base-content group-hover:text-primary;
 }
 .hamburger-line {
-  @apply h-[2px] my-1 block bg-base-content group-hover:bg-primary ease-default;
+  @apply ease-default my-1 block h-[2px] bg-base-content group-hover:bg-primary;
 }
 .portfolio-img {
-  @apply rounded-md shadow-md overflow-hidden;
+  @apply overflow-hidden rounded-md shadow-md;
 }
 .portfolio-projTitle {
-  @apply font-semibold text-xl text-base-content mt-5 mb-3 color-easing;
+  @apply color-easing mt-5 mb-3 text-xl font-semibold text-base-content;
 }
 .portfolio-p {
-  @apply font-medium text-base text-muted color-easing;
+  @apply color-easing text-base font-medium text-muted;
 }
 .contact-card {
-  @apply card w-full lg:w-2/3 text-center bg-base-200 p-8 rounded-xl shadow-md color-easing;
+  @apply color-easing card w-full rounded-xl bg-base-200 p-8 text-center shadow-md lg:w-2/3;
 }
 .card-title {
-  @apply font-bold text-lg text-base-content justify-center mt-3 color-easing;
+  @apply color-easing mt-3 justify-center text-lg font-bold text-base-content;
 }
 .btnCustom {
-  @apply btn text-base-100 font-semibold bg-primary hover:bg-primary-focus border-none py-3 px-5 rounded-md;
+  @apply btn rounded-md border-none bg-primary py-3 px-5 font-semibold text-base-100 hover:bg-primary-focus;
 }

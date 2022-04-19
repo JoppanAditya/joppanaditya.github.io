@@ -145,39 +145,10 @@ function sendmail(name, email, subjectInput, messageInput) {
   });
 }
 
-///== Using Google Spreadsheet ==///
-// const scriptURL = "https://script.google.com/macros/s/AKfycbw-mjTEoBvSON-av80gkOf9Bn4THbWHDt_QZ3mC9jhuBx2FlSoOoDbujRY3uWNCNfGd/exec";
-// const form = document.forms["contact-form"];
-// const btnSend = document.querySelector(".btnSend");
-// const btnLoading = document.querySelector(".btnSending");
-
-// function sendMessage() {
-//   form.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     btnLoading.classList.toggle("hidden");
-//     btnSend.classList.toggle("hidden");
-//     fetch(scriptURL, { method: "POST", body: new FormData(form) })
-//       .then((response) => {
-//         console.log("Success!", response);
-//         btnLoading.classList.toggle("hidden");
-//         btnSend.classList.toggle("hidden");
-//         alertSuccess.classList.toggle("alert-open");
-//         alertSuccess.classList.toggle("alert-close");
-//         form.reset();
-//       })
-//       .catch((error) => {
-//         console.error("Error!", error.message);
-//         alertError.classList.toggle("alert-open");
-//         alertError.classList.toggle("alert-close");
-//         form.reset();
-//       });
-//   });
-// }
-
 //===== Scroll to Top =====//
 var scrollTop = document.getElementById("scrollBtn");
 window.addEventListener("scroll", function () {
-  if (window.pageYOffset > 800) {
+  if (window.pageYOffset > 500) {
     scrollTop.classList.add("scrollActive");
   } else {
     scrollTop.classList.remove("scrollActive");
@@ -197,4 +168,79 @@ alertBtn.addEventListener("click", function () {
 alertBtnError.addEventListener("click", function () {
   alertError.classList.toggle("alert-open");
   alertError.classList.toggle("alert-close");
+});
+
+// GSAP
+gsap.registerPlugin(TextPlugin);
+
+let tl = gsap.timeline({
+  defaults: {
+    duration: 1.2,
+    opacity: 0,
+    scale: 1,
+    ease: "power1.out",
+  },
+});
+tl.from(".heroTitle", { delay: 1 })
+  .fromTo(".heroTitle > span", { y: "-50px", text: " " }, { duration: 1.5, y: "0", opacity: 1, text: "Joppan" }, "-=1")
+  .from(".heroAnim", { stagger: 0.5, y: "-100%" }, "-=.5")
+  .fromTo(".heroBtn", { scale: 0 }, { duration: 1.5, opacity: 1, ease: "elastic.out(1, 0.3)" }, "-=2.5")
+  .from(".heroSocial", { stagger: 0.3, x: "-100%" }, "-=2.3")
+  .fromTo(".tiltHero > img", { scale: 0 }, { opacity: 1, ease: "back.out(1.7)" }, "-=1.5")
+  .fromTo(".scroll-down", { scale: 0 }, { opacity: 1, ease: "back.out(1.7)" }, "-=.7");
+
+// AOS
+const secH2 = document.querySelectorAll(".secTitle > h2");
+const secH4 = document.querySelectorAll(".secTitle > h4");
+const contactCard = document.querySelectorAll(".contactCard");
+const formTitle = document.querySelectorAll(".contactForm > label");
+const formInput = document.querySelectorAll(".contactForm > input");
+const h3 = document.querySelectorAll(".portfolio > h3");
+const p = document.querySelectorAll(".portfolio > p");
+const img = document.querySelectorAll(".portfolio > div");
+const skillsAnim = document.querySelectorAll(".skillsAnim");
+
+secH2.forEach((title, i) => {
+  title.dataset.aos = "fade-down";
+  title.dataset.aosAnchorPlacement = "bottom-bottom";
+});
+secH4.forEach((title, i) => {
+  title.dataset.aos = "zoom-in";
+  title.dataset.aosDelay = "500";
+  title.dataset.aosAnchorPlacement = "bottom-bottom";
+});
+img.forEach((img, i) => {
+  img.dataset.aos = "flip-down";
+  img.dataset.aosDelay = i * 100;
+  img.dataset.aosAnchorPlacement = "top-bottom";
+});
+h3.forEach((port, i) => {
+  port.dataset.aos = "zoom-in-up";
+  port.dataset.aosDelay = i * 150;
+  port.dataset.aosAnchorPlacement = "top-bottom";
+});
+p.forEach((port, i) => {
+  port.dataset.aos = "zoom-in-up";
+  port.dataset.aosDelay = i * 200;
+  port.dataset.aosAnchorPlacement = "top-bottom";
+});
+contactCard.forEach((card, i) => {
+  card.dataset.aos = "zoom-out";
+  card.dataset.aosDelay = i * 100;
+});
+formTitle.forEach((label, i) => {
+  label.dataset.aos = "zoom-in-left";
+});
+formInput.forEach((input, i) => {
+  input.dataset.aos = "zoom-in";
+});
+skillsAnim.forEach((progress, i) => {
+  progress.dataset.aos = "zoom-in";
+  progress.dataset.aosDelay = i * 200;
+});
+
+AOS.init({
+  once: true,
+  duration: 1000,
+  easing: "ease-in-out",
 });

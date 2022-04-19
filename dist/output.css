@@ -2037,8 +2037,8 @@ body[dir="rtl"] .checkbox:checked,
   height: 1.5rem;
 }
 
-.h-0 {
-  height: 0px;
+.h-auto {
+  height: auto;
 }
 
 .h-full {
@@ -2059,10 +2059,6 @@ body[dir="rtl"] .checkbox:checked,
 
 .h-11 {
   height: 2.75rem;
-}
-
-.h-auto {
-  height: auto;
 }
 
 .min-h-screen {
@@ -2137,13 +2133,13 @@ body[dir="rtl"] .checkbox:checked,
   transform-origin: bottom right;
 }
 
-.-translate-x-1\/2 {
-  --tw-translate-x: -50%;
+.-translate-y-full {
+  --tw-translate-y: -100%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.-translate-y-full {
-  --tw-translate-y: -100%;
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -2240,6 +2236,10 @@ body[dir="rtl"] .checkbox:checked,
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-x-hidden {
+  overflow-x: hidden;
 }
 
 .scroll-smooth {
@@ -2746,7 +2746,7 @@ body {
           backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
-.MobileNav-blur, .dark .MobileNav-blur {
+.MobileNav-blur {
   z-index: -10;
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
@@ -2757,6 +2757,40 @@ body {
   --tw-translate-y: -0px;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   opacity: 1;
+}
+
+@-webkit-keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  75% {
+    opacity: 50;
+    transform: translateY(-25%);
+  }
+
+  100% {
+    opacity: 100;
+    transform: translateY(-0px);
+  }
+}
+
+@keyframes slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+
+  75% {
+    opacity: 50;
+    transform: translateY(-25%);
+  }
+
+  100% {
+    opacity: 100;
+    transform: translateY(-0px);
+  }
 }
 
 .hamburger-active > span:nth-child(2) {
@@ -2787,13 +2821,11 @@ body {
 }
 
 @media (min-width: 1024px) {
-  .deskNav ul a,
-  .dark .deskNav ul a {
+  .deskNav ul a {
     position: relative;
   }
 
-  .deskNav ul a::before,
-  a.dark .deskNav ul a::before {
+  .deskNav ul a::before {
     content: "";
     position: absolute;
     left: 0;
@@ -2805,24 +2837,17 @@ body {
     transition: all 0.3s ease;
   }
 
-  .deskNav ul a:hover::before,
-  .dark .deskNav ul a:hover::before {
+  .deskNav ul a:hover::before {
     width: 100%;
   }
 
-  .deskNav ul a.activated::before,
-  a.dark .deskNav ul a.activated::before {
+  .deskNav ul a.activated::before {
     content: "";
     position: absolute;
     left: 0;
     bottom: -13%;
     width: 100%;
   }
-}
-
-form.disable-form {
-  pointer-events: none;
-  opacity: 0.7;
 }
 
 .scrollActive {
@@ -3381,23 +3406,6 @@ form.disable-form {
 .focus\:invalid\:ring-error:invalid:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: hsl(var(--er) / var(--tw-ring-opacity));
-}
-
-.dark .dark\:text-primary {
-  --tw-text-opacity: 1;
-  color: hsl(var(--p) / var(--tw-text-opacity));
-}
-
-.dark .dark\:ring-slate-200\/20 {
-  --tw-ring-color: rgb(226 232 240 / 0.2);
-}
-
-.dark .dark\:ring-slate-900\/5 {
-  --tw-ring-color: rgb(15 23 42 / 0.05);
-}
-
-.dark .dark\:hover\:opacity-80:hover {
-  opacity: 0.8;
 }
 
 @media (min-width: 768px) {

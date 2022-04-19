@@ -7,9 +7,11 @@
     <title>Joppan Aditya</title>
 
     <link rel="icon" href="dist/img/favicon.ico" type="image/x-icon" />
-    <link href="dist/output.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="dist/css/style.css" rel="stylesheet" />
   </head>
-  <body class="color-easing bg-base-100 antialiased">
+  <body class="color-easing overflow-x-hidden bg-base-100 antialiased">
     <!-- Page Loader Start -->
     <div class="page-loader js-page-loader">
       <img src="dist/img/Page Loader.png" alt="page-loader" />
@@ -66,7 +68,7 @@
         </div>
       </div>
       <!-- Mobile Navbar -->
-      <div id="mobileNav" class="js-toggle ease-500 absolute top-full left-0 -z-10 flex h-auto w-full -translate-y-full items-center justify-center bg-base-100 bg-opacity-80 py-5 opacity-0 lg:hidden">
+      <div id="mobileNav" class="js-toggle ease-500 navbar-closed absolute top-full left-0 -z-10 flex h-auto w-full -translate-y-full items-center justify-center bg-base-100 bg-opacity-80 py-5 opacity-0 lg:hidden">
         <ul class="flex flex-col items-center">
           <li class="group">
             <a href="#home" class="navbar-mobile links-mobile pb-2">Home</a>
@@ -124,12 +126,12 @@
 
           <!-- Desktop -->
           <div class="hidden w-1/2 self-center px-0 lg:block lg:px-6">
-            <h1 class="color-easing text-5xl font-bold text-base-content">Hi, I'M <span class="font-bold text-primary">Joppan</span></h1>
-            <h2 class="mt-2 mb-5 text-xl font-medium text-accent lg:text-2xl">I'm a Student</h2>
-            <p class="color-easing mb-1 text-base font-medium italic leading-relaxed text-base-content">
+            <h1 class="color-easing heroTitle text-5xl font-bold text-base-content">Hi, I'M <span class="font-bold text-primary"></span></h1>
+            <h2 class="heroAnim mt-2 mb-5 text-xl font-medium text-accent lg:text-2xl">I'm a Student</h2>
+            <p class="color-easing heroAnim mb-1 text-base font-medium italic leading-relaxed text-base-content">
               Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”
             </p>
-            <p class="mb-10 text-base italic text-primary">- Linus Torvalds</p>
+            <p class="heroAnim mb-10 text-base italic text-primary">- Linus Torvalds</p>
 
             <div class="heroBtn">
               <a href="#contact" class="btnCustom">Contact Me</a>
@@ -138,17 +140,17 @@
 
           <!-- Hero Image -->
           <div class="w-11/12 self-center px-4 lg:w-5/12">
-            <div class="relative my-5">
+            <div class="tiltHero relative my-5">
               <img src="dist/img/hero-img.png" alt="Joppan Aditya" class="mx-auto max-w-full" />
             </div>
           </div>
 
           <!-- Mobile -->
           <div class="w-full px-4 lg:hidden">
-            <h1 class="color-easing text-lg font-semibold text-base-content md:flex md:text-4xl">Hi, I'M <span class="block text-4xl font-bold text-primary md:flex md:px-2 md:text-4xl">Joppan</span></h1>
-            <h2 class="mt-1 mb-2 text-lg font-medium text-accent lg:text-2xl">I'm a Student</h2>
-            <p class="color-easing mb-1 font-medium italic text-base-content">Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”</p>
-            <p class="mb-10 text-base italic text-primary">- Linus Torvalds</p>
+            <h1 class="color-easing heroTitle text-lg font-semibold text-base-content md:flex md:text-4xl">Hi, I'M <span class="block text-4xl font-bold text-primary md:flex md:px-2 md:text-4xl"></span></h1>
+            <h2 class="heroAnim mt-1 mb-2 text-lg font-medium text-accent lg:text-2xl">I'm a Student</h2>
+            <p class="color-easing heroAnim mb-1 font-medium italic text-base-content">Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to program.”</p>
+            <p class="heroAnim mb-10 text-base italic text-primary">- Linus Torvalds</p>
             <div class="heroBtn">
               <a href="#contact" class="btnCustom">Contact Me</a>
             </div>
@@ -172,21 +174,21 @@
     <section id="about" class="color-easing bg-base-200 py-32">
       <div class="container mx-auto">
         <div class="flex flex-wrap items-center">
-          <div class="mb-8 w-full px-4 md:w-1/2">
+          <div class="mb-8 w-full px-4 md:w-1/2" data-aos="zoom-out-right">
             <div class="flex flex-wrap p-4 xl:justify-center">
               <div class="overflow-hidden rounded-md shadow-md">
                 <img src="dist/img/about.jpg" alt="Joppan Aditya" class="mx-auto max-w-full lg:max-w-sm" />
               </div>
             </div>
           </div>
-          <div class="w-full px-4 md:w-1/2">
+          <div class="secTitle w-full px-4 md:w-1/2">
             <h2 class="text-4xl font-bold text-primary md:mb-1 lg:text-5xl">About <span class="color-easing text-base-content">Me</span></h2>
             <h4 class="text-md mb-5 font-medium text-accent">Find More About Me</h4>
-            <p class="color-easing mb-9 max-w-xl text-justify text-base font-medium text-base-content lg:text-lg">
+            <p class="color-easing mb-9 max-w-xl text-justify text-base font-medium text-base-content lg:text-lg" data-aos="zoom-in" data-aos-delay="1000">
               Hello, my name is Gede Jovan Tiyo Aditya. I am 18 years old. I am a 12th grade student majoring in Multimedia at one of the State Vocational Schools in Jakarta. I became interested in web developers when I was an internship at
               an automotive company in Indonesia when I was in 11th grade. From then, I start learning web programming until now.
             </p>
-            <a href="#" class="btnCustom">Get Resume</a>
+            <a href="#" class="btnCustom" data-aos="zoom-in" data-aos-delay="1000">Get Resume</a>
           </div>
         </div>
       </div>
@@ -197,7 +199,7 @@
     <section id="skills" class="color-easing bg-neutral pt-32 pb-16">
       <div class="container mx-auto">
         <div class="w-full px-4">
-          <div class="mx-auto mb-16 text-center">
+          <div class="secTitle mx-auto mb-16 text-center">
             <h2 class="color-easing text-4xl font-bold text-primary md:mb-2 lg:text-5xl">Skills</h2>
             <h4 class="text-md color-easing mb-5 font-medium text-accent">Professional Skills</h4>
           </div>
@@ -213,10 +215,10 @@
           <div class="w-full px-4 md:w-1/2">
             <!-- Design -->
             <div tabindex="0" class="collapse-open collapse">
-              <div class="color-easing collapse-title text-xl font-medium text-white">Design</div>
+              <div class="color-easing collapse-title text-xl font-medium text-white" data-aos="fade-up">Design</div>
               <div class="collapse-content">
                 <!-- Photoshop -->
-                <div class="pb-2">
+                <div class="skillsAnim pb-2">
                   <div class="color-easing flex w-full justify-between text-muted">
                     <span>Adobe Photoshop</span>
                     <span>90%</span>
@@ -224,7 +226,7 @@
                   <progress class="color-easing progress progress-accent w-full bg-progress-back" value="90" max="100"></progress>
                 </div>
                 <!-- Illustrator -->
-                <div class="pb-2">
+                <div class="skillsAnim pb-2">
                   <div class="color-easing flex w-full justify-between text-muted">
                     <span>Adobe Illustrator</span>
                     <span>70%</span>
@@ -232,7 +234,7 @@
                   <progress class="color-easing progress progress-accent w-full bg-progress-back" value="70" max="100"></progress>
                 </div>
                 <!-- CorelDraw -->
-                <div class="pb-2">
+                <div class="skillsAnim pb-2">
                   <div class="color-easing flex w-full justify-between text-muted">
                     <span>CorelDRAW</span>
                     <span>90%</span>
@@ -240,7 +242,7 @@
                   <progress class="color-easing progress progress-accent w-full bg-progress-back" value="90" max="100"></progress>
                 </div>
                 <!-- XD -->
-                <div class="pb-2">
+                <div class="skillsAnim pb-2">
                   <div class="color-easing flex w-full justify-between text-muted">
                     <span>Adobe XD</span>
                     <span>75%</span>
@@ -248,7 +250,7 @@
                   <progress class="color-easing progress progress-accent w-full bg-progress-back" value="75" max="100"></progress>
                 </div>
                 <!-- Figma -->
-                <div>
+                <div class="skillsAnim">
                   <div class="color-easing flex w-full justify-between text-muted">
                     <span>Figma</span>
                     <span>85%</span>
@@ -261,10 +263,10 @@
           <div class="w-full px-4 md:w-1/2">
             <!-- Ms. office -->
             <div tabindex="0" class="collapse-open collapse">
-              <div class="color-easing collapse-title text-xl font-medium text-white">Microsoft Office</div>
+              <div class="color-easing collapse-title text-xl font-medium text-white" data-aos="fade-up">Microsoft Office</div>
               <div class="collapse-content">
                 <!-- Word -->
-                <div class="pb-2">
+                <div class="skillsAnim pb-2">
                   <div class="color-easing flex w-full justify-between text-muted">
                     <span>Microsoft Word</span>
                     <span>95%</span>
@@ -272,7 +274,7 @@
                   <progress class="color-easing progress progress-secondary w-full bg-progress-back" value="95" max="100"></progress>
                 </div>
                 <!-- Power Point -->
-                <div class="pb-2">
+                <div class="skillsAnim pb-2">
                   <div class="color-easing flex w-full justify-between text-muted">
                     <span>Microsoft Power Point</span>
                     <span>90%</span>
@@ -280,7 +282,7 @@
                   <progress class="color-easing progress progress-secondary w-full bg-progress-back" value="90" max="100"></progress>
                 </div>
                 <!-- Excel -->
-                <div class="pb-2">
+                <div class="skillsAnim pb-2">
                   <div class="color-easing flex w-full justify-between text-muted">
                     <span>Microsoft Excel</span>
                     <span>85%</span>
@@ -346,7 +348,7 @@
     <section id="portfolio" class="color-easing bg-base-200 pt-32 pb-16">
       <div class="container mx-auto">
         <div class="w-full px-4">
-          <div class="mx-auto mb-16 text-center">
+          <div class="secTitle mx-auto mb-16 text-center">
             <h2 class="text-4xl font-bold text-primary md:mb-1 lg:text-5xl">Portfolio</h2>
             <h4 class="text-md mb-5 font-medium text-accent">My Latest Project</h4>
           </div>
@@ -354,7 +356,7 @@
 
         <div class="flex w-full flex-wrap justify-center px-4 xl:mx-auto xl:w-10/12">
           <!-- Portfolio 1 -->
-          <div class="portfolio mb-8 p-4 md:w-1/2">
+          <div class="portfolio portfolio mb-8 p-4 md:w-1/2">
             <div class="portfolio-img">
               <img src="dist/img/1.png" alt="Landing Page" width="w-full" />
             </div>
@@ -362,16 +364,16 @@
             <p class="portfolio-p">This is my personal landing page project. I created this website to learn Tailwind CSS.</p>
             <div class="flex items-center pt-3">
               <a
-                href="https://github.com/JoppanAditya/portfolio-tailwind"
+                href="https://github.com/JoppanAditya/LatihanPortfolio"
                 target="_blank"
                 class="hover:text-light ease-default btn btn-outline mr-4 rounded-md border-primary py-3 px-5 text-base font-semibold text-primary hover:border-primary hover:bg-primary"
                 >Github</a
               >
-              <a href="https://joppanaditya.github.io/portfolio-tailwind/" target="_blank" class="btnCustom">Live Demo</a>
+              <a href="https://joppanaditya.mdbgo.io/" target="_blank" class="btnCustom">Live Demo</a>
             </div>
           </div>
           <!-- Portfolio 2 -->
-          <div class="portfolio mb-8 p-4 md:w-1/2">
+          <div class="portfolio portfolio mb-8 p-4 md:w-1/2">
             <div class="portfolio-img">
               <img src="dist/img/2.png" alt="Company Profile" width="w-full" />
             </div>
@@ -388,7 +390,7 @@
             </div>
           </div>
           <!-- Portfolio 3 -->
-          <div class="portfolio mb-8 p-4 md:w-1/2">
+          <div class="portfolio portfolio mb-8 p-4 md:w-1/2">
             <div class="portfolio-img">
               <img src="dist/img/3.png" alt="Company Landing Page" width="w-full" />
             </div>
@@ -405,7 +407,7 @@
             </div>
           </div>
           <!-- Portfolio 4 -->
-          <div class="portfolio mb-8 p-4 md:w-1/2">
+          <div class="portfolio portfolio mb-8 p-4 md:w-1/2">
             <div class="portfolio-img">
               <img src="dist/img/4.png" alt="Company Profile Materialize" width="w-full" />
             </div>
@@ -459,7 +461,7 @@
     <section id="contact" class="color-easing py-32">
       <div class="container mx-auto">
         <div class="w-full px-4">
-          <div class="mx-auto mb-20 text-center">
+          <div class="secTitle mx-auto mb-20 text-center">
             <h2 class="text-4xl font-bold text-primary md:mb-1 lg:text-5xl">Contact <span class="color-easing text-base-content">Me</span></h2>
             <h4 class="text-md mb-5 font-medium text-accent">Get In Touch</h4>
           </div>
@@ -533,10 +535,17 @@
               </div>
               <div class="contactForm mb-8 w-full px-4">
                 <label for="message" class="text-base font-bold text-primary">Message</label>
-                <textarea type="text" id="text" name="message" class="color-easing mt-2 h-32 w-full rounded-md border-0 bg-base-200 p-3 text-accent focus:outline-none focus:ring-1 focus:ring-primary lg:h-48"></textarea>
+                <textarea
+                  type="text"
+                  id="text"
+                  name="message"
+                  class="color-easing mt-2 h-32 w-full rounded-md border-0 bg-base-200 p-3 text-accent focus:outline-none focus:ring-1 focus:ring-primary lg:h-48"
+                  data-aos="zoom-in-left"
+                  data-aos-anchor-placement="top-bottom"
+                ></textarea>
               </div>
               <!-- Send Button -->
-              <div class="btnSend flex w-full justify-end px-4">
+              <div class="btnSend flex w-full justify-end px-4" data-aos="zoom-in-left" data-aos-anchor-placement="top-bottom">
                 <button type="submit" class="btnCustom w-full md:w-2/6">Send Message</button>
               </div>
             </form>
@@ -547,7 +556,7 @@
     <!-- Contact Section End -->
 
     <!-- Scroll to Top -->
-    <div id="scrollBtn" class="fixed bottom-2 right-0 scale-0 overflow-auto rounded-xl p-8 md:right-2">
+    <div id="scrollBtn" class="ease-default fixed bottom-2 right-0 scale-0 overflow-auto rounded-xl p-8 md:right-2">
       <a href="#home" class="scrollTop">
         <div class="flex justify-end">
           <div class="color-easing flex h-10 w-10 animate-bounce items-center justify-center rounded-full bg-base-100 p-2 text-primary shadow-lg ring-1 ring-slate-900/5 md:h-14 md:w-14 lg:h-10 lg:w-10">
@@ -630,6 +639,11 @@
     </footer>
     <!-- Footer End -->
 
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/TextPlugin.min.js"></script>
     <!-- Email js -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
